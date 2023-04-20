@@ -1,0 +1,1 @@
+project(Z3 C CXX)

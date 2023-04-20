@@ -1,4 +1,4 @@
-AC_INIT([z3], [4.2])
+AC_INIT([z3],[4.2])
 AC_CONFIG_SRCDIR(src/util/util.cpp)
 AC_PREFIX_DEFAULT(/usr)
 
@@ -91,7 +91,7 @@ fi
 
 AC_PROG_MAKE_SET
 
-AC_LANG_CPLUSPLUS
+AC_LANG([C++])
 
 # Sets GREP
 AC_PROG_GREP
@@ -185,7 +185,8 @@ fi
 # Generating configuration
 #
 ###################
-AC_OUTPUT(scripts/config-debug.mk scripts/config-release.mk)
+AC_CONFIG_FILES([scripts/config-debug.mk scripts/config-release.mk])
+AC_OUTPUT
 
 ###################
 #
